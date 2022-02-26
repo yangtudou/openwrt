@@ -8,5 +8,5 @@ src-git telephony https://git.openwrt.org/feed/telephony.git
 #src-link custom /usr/src/openwrt/custom-feed
 
 #ssr+ and other package from inter
-#src-git kenzo https://github.com/kenzok8/openwrt-packages
-#src-git small https://github.com/kenzok8/small
+src-git kenzo https://github.com/kenzok8/openwrt-packages
+src-git small https://github.com/kenzok8/small
