@@ -5,4 +5,8 @@
 
 [旁路由教程地址](https://mlapp.cn/1008.html)
 主要要在防火墙里添加一条
-```iptables -t nat -I POSTROUTING -j MASQUERADE```
+```bash
+iptables -t nat -I POSTROUTING -j MASQUERADE
+```
+
+`.2711config` 需要配合 `feeds.conf.default_plus` 使用
