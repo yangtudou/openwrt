@@ -11,5 +11,8 @@
 #
 
 # 修改默认IP为192.168.1.2
-#sed -i 's/192.168.1.1/192.168.1.2/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.1.2/g' package/base-files/files/bin/config_generate
 
+# Add luci-theme-argon
+rm -rf ../lean/luci-theme-argon
+git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
