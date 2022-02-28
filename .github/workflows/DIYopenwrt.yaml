@@ -1,4 +1,4 @@
-name: 手动构建 OpenWrt 固件
+name: 手动构建 OpenWrt 固件需要打开流程里的 true
 
 on:
   repository_dispatch:
