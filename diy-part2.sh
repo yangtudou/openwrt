@@ -14,6 +14,10 @@
 sed -i 's/192.168.1.1/192.168.1.2/g' package/base-files/files/bin/config_generate
 
 # Add luci-theme-argon
-cd /package/luci
-rm -rf luci-theme-argon
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+rm -rf package/feeds/luci/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/feeds/luci/luci-theme-argon
+
+# Add luci-app-ssr-plus
+git clone https://github.com/kenzok8/openwrt-packages.git
+mv openwrt-packages/luci-app-ssr-plus package/feeds/luci
+rm -rf openwrt-packages
