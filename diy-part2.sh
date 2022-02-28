@@ -11,7 +11,13 @@
 #
 
 # 修改默认IP为192.168.1.2
-sed -i 's/192.168.1.1/192.168.1.2/g' package/base-files/files/bin/config_generate
+# sed -i 's/192.168.1.1/192.168.1.2/g' package/base-files/files/bin/config_generate
+
+# 旁路由的设置
+mkdir -p files/etc/config
+cd ..
+mv network openwrt/files/etc/config
+cd openwrt
 
 # Add luci-theme-argon
 rm -rf package/feeds/luci/luci-theme-argon
