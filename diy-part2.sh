@@ -15,6 +15,7 @@
 
 # 旁路由的设置
 mkdir -p files/etc/config
+chmod -R 755 files
 cd ..
 mv network openwrt/files/etc/config
 cd openwrt
