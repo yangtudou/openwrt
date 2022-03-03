@@ -1,6 +1,6 @@
 ## 软路由的需求及解决方案
 
-1. 能外网访问的**家庭轻 nas**（ddns+uhttpd+samba）
+1. 能外网访问的**家庭轻 nas**（ddns+uhttpd/nginx+samba）
 
 2. 全屋科学上网（passwall/helloword/ssr-plus）
 
